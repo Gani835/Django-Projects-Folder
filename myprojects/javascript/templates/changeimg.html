@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://images-eu.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/I/51n1kqUR12L._SX300_SY300_QL70_FMwebp_.jpg" id="myimage">
+    <button type="button" onclick="myfunc()">change image </button>
+    <script>
+        function myfunc(){
+        document.getElementById('myimage').src='https://www.hindisoch.com/wp-content/uploads/2015/03/Lord-Ganesha-Wallpaper.jpg';}
+    </script>
+
+                                                <!-- OR -->
+
+    <img src="https://www.hindisoch.com/wp-content/uploads/2015/03/Lord-Ganesha-Wallpaper.jpg" id="myimage">
+    <button type="button" onclick="document.getElementById('myimage').src='https://images-eu.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/I/51n1kqUR12L._SX300_SY300_QL70_FMwebp_.jpg'">Change Image</button>
+</body>
+</html>
+

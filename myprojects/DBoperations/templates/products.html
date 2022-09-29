@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detailes Page</title>
+</head>
+<body>
+    <style>
+        nav{background-color: brown;color:white;font-size:40px;padding: 5px;}
+        body{background-color: aqua;}
+        label{color:white;}
+        h3{background-color: blueviolet;color:white;height:40px;font-size:30px;line-height:40px;}
+    </style>
+    <center>
+        <h3><marquee> Welcome To Sri Vasavi Fancy & Cosmetics</marquee></h3>
+        <fieldset style="width:100px;border:3px dashed red;background-color:peru;color:rgb(0,0,0);">
+        <legend>Product Info</legend>
+        <form action="product" method="POST">
+            {% csrf_token %}
+            <label for="company">Enter Company Name:</label><br>
+            <input type="text" name="company"><br>
+            <label for="cream">Enter Cream For:</label><br>
+            <input type="text" name="cream"><br>
+            <label for="scrub">Enter Scrub For:</label><br>
+            <input type="text" name="scrub"><br>
+            <label for="lotion">Enter Lotion For:</label><br>
+            <input type="text" name="lotion"><br>
+            <label for="oil">Enter Oil For:</label><br>
+            <input type="text" name="oil"><br>
+            <label for="gel">Enter Gel For:</label><br>
+            <input type="text" name="gel"><br>
+            <label for="soap">Enter Soap For:</label><br>
+            <input type="text" name="soap"><br><br>
+            <input type="submit" value="save">
+        </form>
+        </fieldset>
+    </center>
+</body>
+</html>
+
+<br><br>
+

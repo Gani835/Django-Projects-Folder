@@ -1,0 +1,22 @@
+{% load static %}
+<style>
+    body{background-color:rgb(250, 107, 155);}
+    h3{font-size:30px;background-color: blueviolet;height:40px;line-height:40px;color:white;}
+    a{background-color: brown;color:white;font-size:20px;text-decoration:none;
+    padding: 10px;margin: 10px;}
+    a:hover{background-color: peru;}
+    img{width:40%;height:50%;float:left;}
+</style>
+<h3><marquee>Welcome To Home Page Please Select any one below. . . . </marquee></h3>
+<center>
+
+<img src="{% static 'D:\DjangoFolder\myprojects\static\Images\procedural-programming-vs-object-oriented-programming.jpeg'%}">
+<ul>
+<a href="{% url 'orminsert' %}">Insert Emp Detailes</a><br><br><br>
+<a href="{% url 'fetchemp' %}">Fetch Emp Detailes</a><br><br><br>
+<a href="{% url 'insfam' %}">Insert Fam Detailes</a><br><br><br>
+<a href="{% url 'fetchfam' %}">Fetch Fam Detailes</a><br><br><br>
+<a href="{% url 'insprod' %}">Insert Prod Detailes</a><br><br><br>
+</ul>
+</center>
+

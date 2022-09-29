@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block main %}
+    <center>
+        <form action='' method='POST'>
+            {% csrf_token %} 
+            Enter employee number:<input type ='text' name='EmpId'><br><br>
+            <input type='Submit'>
+        </form>
+            {% for row in empinfo %}
+            <p>{{row.0}} {{row.1}} {{row.2}} {{row.3}} {{row.4}}</p>
+            {% endfor %}
+    </center>
+    
+<br><br>
+
+{% endblock %}

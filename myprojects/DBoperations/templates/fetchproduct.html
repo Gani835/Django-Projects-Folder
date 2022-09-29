@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form action="fetchprod" method="POST">
+            {% csrf_token %}
+            Enter Company Name: <input type="text" name="product"><br><br>
+            <input type="submit">
+        </form>
+
+        {% for row in productinfo %}
+        <p>{{row.0}} {{row.1}} {{row.2}} {{row.3}} {{row.4}}</p>
+        {% endfor %}
+    </center>
+</body>
+</html>

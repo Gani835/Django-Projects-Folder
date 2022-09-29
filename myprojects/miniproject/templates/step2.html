@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Page</title>
+</head>
+<style>
+
+    div{text-align:center;}
+    body{background-color: black;}
+    label{color: white;font-size: 20px;}
+    input{background-color: black;color:white;padding-left:60px;padding-right:60px;padding-top:20px;padding-bottom:20px;border-radius:5px;}
+    a{text-decoration: none;background-color:beige;color:black;border-radius:30px;padding-left:80px;padding-right: 80px;padding-top: 15px;padding-bottom: 15px;}
+</style>
+<body>
+    <div>
+        <h2 style="color:white;font-size:30px;font-family:Verdana, Geneva, Tahoma, sans-serif">Sign in to Twitter</h2><br>
+        <b><a href="">Sign in with Google</a></b><br><br><br><br>
+        <b><a href="">Sign in with Apple</a></b><br><br><br>
+        <hr style="width:300px"><br>
+        <input type="text", name="username", placeholder="Phone,email,or username"><br><br><br>
+        <b><a href=""style="padding-left:130px;padding-right:130px;">Next</a></b><br><br><br><br>
+        <b><a href="" style="background-color:skyblue;color:black;">Forget Password?</a><br></b><br><br><br>
+        <b><label for="">Don't have an account?</label></b>
+        <b><a href="{% url 'page2' %}">Sign up</a></b>
+    </div>
+</body>
+</html>

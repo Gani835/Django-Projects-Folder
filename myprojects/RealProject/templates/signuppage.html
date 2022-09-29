@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:palegreen};
+
+    div{background-color: white;}
+    a{text-decoration: none;float: left;padding: 10px;}
+    fieldset{background-color:rgb(85, 83, 212);width:30ch;height:60ch;border-radius: 10px;}
+</style>
+<body>
+    <div>
+        <a href="">Home Page</a>
+        <a href="">Signup Page</a>
+        <a href="login">Login Page</a>
+    </div> <br><br>
+    <marquee><h2>Welcome to the DairyMaker Page. . . .</h2></marquee><br><br>
+    <center>
+        <fieldset>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <h3 style="color:white;font-family:Verdana, Geneva, Tahoma, sans-serif">Signup Here</h3>
+                <input type="text" name="fname" placeholder="Enter Your First Name" required style="width:30ch;height:3ch"><br><br><br>
+                <input type="text" name="lname" placeholder="Enter Your Last Name" required style="width:30ch;height:3ch"><br><br><br>
+                <input type="email" name="email" placeholder="Enter Your Email address" required style="width:30ch;height:3ch"><br><br><br>
+                <input type="text" name="username" placeholder="Enter your Username" required style="width:30ch;height:3ch"><br><br><br>
+                <input type="password" name="pwd1" placeholder="Enter Password" required  style="width:30ch;height:3ch"><br><br><br>
+                <input type="password" name="pwd2" placeholder="Enter Password Again" required style="width:30ch;height:3ch"><br><br><br>
+                <input type="submit" value="save" style="width:10ch; height:3ch">
+            </form>
+        </fieldset>
+    </center>
+</body>
+</html>

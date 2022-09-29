@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<style>
+    body{background-color: black;
+        overflow-y: scroll;
+        overscroll-behavior-y: none;}
+    h1{color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:8ch;}
+    h3{color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:4ch;}
+    a{text-decoration: none;background-color:beige;color:black;border-radius:30px;padding-left:80px;padding-right: 80px;padding-top: 10px;padding-bottom: 10px;}
+</style>
+<body>
+    <!--<img src="C:/Users/konakalla%20Ganesh/Desktop/Twitter.Its what's happening_Twitter.html" alt="Twitter Logo">-->
+    <center>
+        <h1>Happening now</h1>
+        <h3>Join Twitter today.</h3><br>
+        <b><a href="">Sign up with Google</a></b><br><br><br>
+        <b><a href="">Sign up with Apple</a></b><br><br>
+        <hr style="width:300px"><br>
+        <b><a href="{% url 'page2' %}" style="background-color:rgb(21, 157, 211);color:white;padding-left:50px;padding-right:50px;padding-top:10px;padding-bottom:10px">Sign up with phone or email</a></b><br><br><br>
+        <!--<div><p style="color:white">By signing up,you agree to the <a href="" style="color:skyblue">Terms of Service</a>and <a href="" style="color:skyblue">Privacy Policy</a>,including <a href="" style="color:skyblue">Cookie Use.</a>
+        </p></div>-->
+        <h5 style="color:white;font-size:3ch;">Already have an account?</h5>
+        <b><a href="{% url 'page3' %}" style="color:rgb(21, 157, 211);background-color:white;border-color:white;padding-left:120px;padding-right:120px;padding-top:10px;padding-bottom:10px">Sign in</a></b>
+    </center>
+</body>
+</html>

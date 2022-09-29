@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="validate"  onsubmit="return validateData()" method="POST">
+        {% csrf_token %}
+        Enter value: <input type="text" name="val" id="value1">
+        <input type="submit"  value="validate">
+    </form>
+</body>
+    <script type="text/javascript">
+
+        /* let a;
+        a=document.getElementById("value1").value;
+
+        if (a>0){
+            document.alert("Positive Number. . . ");}
+        else
+        {
+            alert("Negative Number. . . .");
+        } */
+
+// By using function. . . .
+
+        /*function validateData() {
+            let a=document.getElementById("value1").value;
+            if (a>0){
+                //document.alert("Iam a Positive Number. . . .");
+                return true;
+            }
+
+            else{
+                //document.alert("Iam a Negative Number. . . .");
+                return false;
+            }
+        }*/
+        
+// By using confirm alert. . . .
+
+        function validateData(){
+            let ch=confirm('can i proceed?');
+            if (ch){
+                return true;
+            }
+            else{
+                return false
+            }
+        }
+    </script>
+</html>

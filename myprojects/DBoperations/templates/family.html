@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block main  %}
+
+<center>
+    <form action="family" method="POST">
+        {% csrf_token %}
+        
+        <label for="Fname">Enter Father Name</label><br><input type="text" name="fname"><br><br>
+        <label for="Mname">Enter Mother Name</label><br><input type="text" name="mname"><br><br>
+        <label for="Sname">Enter Son Name</label><br><input type="text" name="sname"><br><br>
+        <label for="D_1name">Enter Daughter_1 Name</label><br><input type="text" name="d1name"><br><br>
+        <label for="D_2name">Enter Daughter_2 Name</label><br><input type="text" name="d2name"><br><br>
+        <label for="Vname">Enter Village Name</label><br><input type="text" name="villagename"><br><br>
+        <input type="submit" value="save">
+    </form>
+</center>
+
+<br><br>
+
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block main %}
+    <center>
+        <form action="orminsert" method="POST">
+            {% csrf_token %}
+        Employee Name: <input type="text" name="empname"><br><br>
+        Employee Salary: <input type="text" name="empsalary"><br><br>
+        Employee Address: <input type="text" name="empaddress"><br><br>
+        <input type="submit" value="save"><br><br>
+    </form>
+    </center>
+
+    {% endblock %}

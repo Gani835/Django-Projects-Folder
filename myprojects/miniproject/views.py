@@ -33,7 +33,7 @@ def fetchfamily(request):
     if request.method=='POST':
         famid=request.POST['id']
         cur=connection.cursor()
-        cur.execute('select * from ganeshdb1.miniproject_Family where id=%s',(famid))
+        cur.execute('select * from ganeshdb1.miniproject_Family where id=%s',(famid,))
         data=cur.fetchall()
         context['faminfo']=data
     return render(request,'fetchfamilyinfo.html',context)

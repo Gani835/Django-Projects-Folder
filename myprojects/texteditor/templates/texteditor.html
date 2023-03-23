@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{form.media}}
+    {% include 'django_quill/media.html' %}
+    <title>TUT</title>
+</head>
+<body>
+    <form role="form" method="POST">
+        <legend>Form Title</legend>
+        {% csrf_token %}
+        {{form}}
+        <button type="submit" class="btn btnprimary">Submit</button>
+    </form>
+</body>
+</html>

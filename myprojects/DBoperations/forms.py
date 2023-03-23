@@ -1,4 +1,3 @@
-from socket import fromshare
 from django import forms
 class formexp(forms.Form):
     Name=forms.CharField(max_length=10)

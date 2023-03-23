@@ -111,6 +111,7 @@ def formexp(request):
         context={}
         context['form']=formexp()
         data=formexp(request.POST)
+        context['form']=data
     return render(request,'formexp.html',context)
 
 

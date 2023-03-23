@@ -56,3 +56,5 @@ def empinfo(request):
             empobj.save()
             return HttpResponse('Data Saved Successfully. . . .')
     return render(request,'empinfo.html',context)
+
+abcd

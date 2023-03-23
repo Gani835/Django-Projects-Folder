@@ -57,4 +57,3 @@ def empinfo(request):
             return HttpResponse('Data Saved Successfully. . . .')
     return render(request,'empinfo.html',context)
 
-abcd
